@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Canvas Boilerplate | Chris Courses</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .scoreContainer {
+        position: fixed;
+        padding: 10px;
+        user-select: none;
+      }
+      .textWhite {
+        color: #ffffff;
+      }
+      .small {
+        font-size: small;
+      }
+      .modal {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+      }
+      .restartContainer {
+        background-color: #ffffff;
+        max-width: 800px;
+        width: 100%;
+        padding: 30px;
+        margin: 10px;
+        text-align: center;
+      }
+      .restartContainer h1 {
+        font-size: 60px;
+        margin: 0;
+      }
+      .restartContainer p {
+        font-size: small;
+      }
+      .restartContainer .buttonClass {
+        background-color: blue;
+        color: #ffffff;
+        width: 100%;
+        padding: 15px;
+        border-radius: 20px;
+      }
+    </style>
+  <link rel="shortcut icon" href="favicon.ico"></head>
+  <body>
+    <div class="scoreContainer"><span class="textWhite small">Score: </span><span id="scoreElement" class="textWhite small">0</span></div>
+    <div id="modalElement" class="modal">
+      <div class="restartContainer">
+        <h1 id="bigScoreElement">0</h1>
+        <p>points</p>
+        <div>
+          <button id="startGameButton" class="buttonClass">Start Game</button>
+        </div>
+      </div>
+    </div>
+    <canvas></canvas>
+  <script src="./js/canvas.bundle.js"></script></body>
+</html>
